@@ -1,0 +1,27 @@
+public class AssignCookies{
+
+
+    // we are give 2 array.
+    // 1 greedy factor array and
+    // second one is the the limit upto which one can eat.
+    public static int maximumContent(int [] greedFactor , int [] cookieSize){
+        Arrays.sort(greedFactor);
+        Arrays.sort(cookieSize);
+        int i  = 0;
+        int j  =0;
+        int count = 0;
+        while(i<greedFactor.length && j<cookieSize.length){
+            if(greedFactor[i]>cookiesSize){
+                i++;
+                j++;
+            }
+            else{
+
+             j++;
+            }
+        }
+        return i;
+    }
+
+
+}
